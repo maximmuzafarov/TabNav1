@@ -73,6 +73,23 @@
             </objects>
             <point key="canvasLocation" x="1003" y="1025"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="Zwj-AP-LcE">
+            <objects>
+                <navigationController id="kcy-hl-j56" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="map.fill" catalog="system" selectedImage="map.fill" id="gOd-tE-uSJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6BT-3M-Cpt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Srh-Dx-my0" kind="relationship" relationship="rootViewController" id="z6m-62-KUW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFD-tz-5V2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="1008"/>
+        </scene>
         <!--First-->
         <scene sceneID="diB-Kk-RRh">
             <objects>
@@ -113,7 +130,7 @@
         <scene sceneID="mM0-Gz-Id9">
             <objects>
                 <viewController id="2or-x2-bq3" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="RuM-X9-Poe">
+                    <view key="view" contentMode="scaleToFill" id="RuM-X9-Poe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -145,7 +162,7 @@
         <scene sceneID="Kts-XW-Fej">
             <objects>
                 <viewController id="beX-Bq-QX1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="aVV-V8-Trc">
+                    <view key="view" contentMode="scaleToFill" id="aVV-V8-Trc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -171,6 +188,33 @@
             </objects>
             <point key="canvasLocation" x="1003" y="1832"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Yzr-Aa-IzB">
+            <objects>
+                <viewController id="Srh-Dx-my0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ecf-f3-czi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Qv7-bl-a8j">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qv7-bl-a8j" firstAttribute="bottom" secondItem="P83-aS-hns" secondAttribute="bottom" id="NkU-KR-DZu"/>
+                            <constraint firstAttribute="trailing" secondItem="Qv7-bl-a8j" secondAttribute="trailing" id="SGl-MI-B4v"/>
+                            <constraint firstItem="Qv7-bl-a8j" firstAttribute="top" secondItem="P83-aS-hns" secondAttribute="top" id="iGn-YT-xgG"/>
+                            <constraint firstItem="Qv7-bl-a8j" firstAttribute="leading" secondItem="P83-aS-hns" secondAttribute="leading" id="zqm-MR-4YK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="P83-aS-hns"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VlN-Hs-BYZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOn-xR-PCv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1765.217391304348" y="1827.4553571428571"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cSz-xV-HbK">
             <objects>
@@ -184,6 +228,7 @@
                         <segue destination="cT7-cy-1eh" kind="relationship" relationship="viewControllers" id="VPz-Va-Jlu"/>
                         <segue destination="VLx-yF-gXh" kind="relationship" relationship="viewControllers" id="q5g-tD-dG5"/>
                         <segue destination="LBs-Q9-yYx" kind="relationship" relationship="viewControllers" id="LmR-dz-YYF"/>
+                        <segue destination="kcy-hl-j56" kind="relationship" relationship="viewControllers" id="Nok-SG-PKy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uDu-xD-CDr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -196,5 +241,6 @@
         <image name="Ferarri" width="1010" height="505"/>
         <image name="Lamba" width="2400" height="1602"/>
         <image name="car" catalog="system" width="128" height="93"/>
+        <image name="map.fill" catalog="system" width="128" height="113"/>
     </resources>
 </document>
