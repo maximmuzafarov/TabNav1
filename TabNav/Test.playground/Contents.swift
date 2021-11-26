@@ -2,7 +2,5 @@ import UIKit
 
 var str = "Hello, playground"
 
-///tEST
+///Testing
 
-//tt
-//ttt
